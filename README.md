@@ -1,5 +1,33 @@
 # ChatGPT 注册（纯协议 + Outlook 邮箱版）—— 最小化提取包
 
+<p align="center">
+  <img src="docs/assets/readme-banner.svg" alt="Repository overview banner" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="Runtime" src="https://img.shields.io/badge/Runtime-Python-3776AB?style=flat-square&logo=python" />
+  <img alt="Interfaces" src="https://img.shields.io/badge/Interfaces-WebUI_+_CLI-0369A1?style=flat-square" />
+  <img alt="Mailbox" src="https://img.shields.io/badge/Mailbox-Outlook_+_CF_Mail-0EA5E9?style=flat-square" />
+  <img alt="Browser" src="https://img.shields.io/badge/Browser-Not_required-16A34A?style=flat-square" />
+</p>
+
+<p align="center"><a href="#-两种使用方式">使用方式</a> · <a href="#文件清单">文件清单</a> · <a href="#安装">安装</a> · <a href="#完整协议链路">协议链路</a></p>
+
+## 一眼看懂
+
+| 维度 | 说明 |
+| --- | --- |
+| 运行形态 | 单号命令行入口 + 支持批量号池与 SSE 日志的 WebUI |
+| 邮箱来源 | Outlook IMAP XOAUTH2 接码池，或 Cloudflare Worker catch-all 邮箱 |
+| WebUI 入口 | `python start_webui.py`，默认打开 `http://127.0.0.1:8765/` |
+| 命令行入口 | `python register_outlook.py '<四段格式>'` |
+| 本地存储 | WebUI 使用 SQLite；升级前按下方现有步骤备份 `webui/webui.db` |
+
+> WebUI 与命令行共用核心库，但适合的操作规模不同。第一次使用建议先阅读两种入口和邮箱格式，再选择运行方式。
+
+---
+
+
 技术交流群：259844673
 
 
